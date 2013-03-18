@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookList>
+	<book code="123" price="2800">Java教科書</book>
+	<book code="456" price="1500">XML教科書</book>
+</bookList>
