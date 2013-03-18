@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE a:parent [
+<!ELEMENT a:parent (a:child)>
+<!ELEMENT a:child  (#PCDATA)>
+<!ATTLIST a:parent xmlns:a CDATA #REQUIRED>
+]>
+
+<a:parent xmlns:a="http://a.co.jp">
+	<a:child>abc</a:child>
+</a:parent>
