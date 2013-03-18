@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookList [
+<!ELEMENT bookList    (book+)>
+<!ELEMENT book        (description)>
+<!ELEMENT description (#PCDATA)>
+]>
+
+<bookList>
+	<book>
+		<description><![CDATA[Java教科書 "基礎編"]]></description>
+	</book>
+	
+	<book>
+		<description><![CDATA[XML教科書 "プロフェッショナル"]]></description>
+	</book>
+</bookList>

@@ -4,8 +4,6 @@
 <!ELEMENT book     (name,price)>
 <!ELEMENT name     (#PCDATA)>
 <!ELEMENT price    (#PCDATA)>
-<!ATTLIST book code CDATA #IMPLIED>
-<!ATTLIST book code ID #REQUIRED>
 ]>
 
 <bookList>
