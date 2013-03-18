@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookList xmlns:a="http://a.co.jp" xmlns:b="http://b.co.jp">
+	<book a:code="123" b:code="J1-T">Java教科書</book>
+	<book a:code="456" b:code="X2-T">XML教科書</book>
+</bookList>
