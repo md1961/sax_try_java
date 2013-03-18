@@ -13,8 +13,11 @@
 		<name>Java教科書</name>
 		<price>2800</price>
 	</book>
+	
+	<!-- 6月新刊です -->
 	<book>
 		<name>XML教科書</name>
+		<!-- 消費税込みの金額です -->
 		<price>1500</price>
 	</book>
 </bookList>
