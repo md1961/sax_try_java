@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE diary [
+<!ELEMENT diary (#PCDATA)>
+]>
+
+<diary>僕の息子の&lt;誕生日&gt;です。</diary>
