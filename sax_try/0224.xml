@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookList [
+<!ELEMENT bookList (book+)>
+<!ELEMENT book     (name,price)>
+<!ELEMENT name     (#PCDATA)>
+<!ELEMENT price    (#PCDATA)>
+<!ATTLIST book code CDATA #IMPLIED>
+<!ATTLIST book code ID #REQUIRED>
+]>
+
+<bookList>
+	<book>
+		<name>Java教科書</name>
+		<price>2800</price>
+	</book>
+	<book>
+		<name>XML教科書</name>
+		<price>1500</price>
+	</book>
+</bookList>
