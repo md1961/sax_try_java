@@ -39,6 +39,8 @@ public class Sax0201 {
 		
 	}
 	
+	private static final String INDENT = "    ";
+	
 	static class ContentHandlerImpl implements ContentHandler {
 		
 		@Override
@@ -54,8 +56,17 @@ public class Sax0201 {
 		@Override
 		public void startElement(String uri, String localName, String qName, Attributes atts)
 				throws SAXException {
+			int countAtts = atts.getLength();
+			
 			System.out.printf("startElement call:\n"
-					+ "    uri: [%s], localName: [%s], qName: [%s]\n", uri, localName, qName);
+					+ "%suri: [%s], localName: [%s], qName: [%s]\n", INDENT, uri, localName, qName);
+			if (countAtts == 0) {
+				System.out.printf("%sNo attributes\n", INDENT);
+			} else {
+				for (int i = 0; i < countAtts; i++) {
+					System.out.printf("%sAttribute '%s' => '%s'\n", INDENT, atts.getQName(i), atts.getValue(i));
+				}
+			}
 		}
 		
 		@Override
