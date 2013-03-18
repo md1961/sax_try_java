@@ -42,6 +42,16 @@ public class Sax0201 {
 	static class ContentHandlerImpl implements ContentHandler {
 		
 		@Override
+		public void startDocument() throws SAXException {
+			System.out.println("startDocument call");
+		}
+		
+		@Override
+		public void endDocument() throws SAXException {
+			System.out.println("endDocument call");
+		}
+		
+		@Override
 		public void startElement(String uri, String localName, String qName, Attributes atts)
 				throws SAXException {
 			System.out.printf("startElement call:\n"
@@ -49,11 +59,15 @@ public class Sax0201 {
 		}
 		
 		@Override
-		public void startPrefixMapping(String prefix, String uri)
-				throws SAXException {}
+		public void endElement(String uri, String localName, String qName)
+				throws SAXException {
+			System.out.printf("endElement call:\n"
+					+ "    uri: [%s], localName: [%s], qName: [%s]\n", uri, localName, qName);
+		}
 		
 		@Override
-		public void startDocument() throws SAXException {}
+		public void startPrefixMapping(String prefix, String uri)
+				throws SAXException {}
 		
 		@Override
 		public void skippedEntity(String name) throws SAXException {}
@@ -71,13 +85,6 @@ public class Sax0201 {
 		
 		@Override
 		public void endPrefixMapping(String prefix) throws SAXException {}
-		
-		@Override
-		public void endElement(String uri, String localName, String qName)
-				throws SAXException {}
-		
-		@Override
-		public void endDocument() throws SAXException {}
 		
 		@Override
 		public void characters(char[] ch, int start, int length)
