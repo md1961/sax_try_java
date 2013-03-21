@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+<!ELEMENT book (#PCDATA)>
+<!ENTITY FILE1 SYSTEM "0227-1.xml">
+]>
+
+<book>&FILE1;</book>
